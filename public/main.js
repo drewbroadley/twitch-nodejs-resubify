@@ -1,14 +1,10 @@
-var TwitchClient = require("node-twitchtv");
+var jsdom = require('jsdom'),
+    fs = require('fs'),
+    jsrepl = fs.readFileSync('../library/external/twitch-js-sdk/twitch-js-sdk.js', 'utf8');
 
 // Load client_id etc.
-var account = require("../conf/twitch-api.json");
+var config = require("../conf/twitch-api.json");
 
-console.trace(account);
-
-var client = new TwitchClient(account);
-
-console.trace(client);
-
-client.games({ limit: 20, offset: 21 }, function(err, response) {
-    console.log(games);
+Twitch.init({clientId: config.client_id}, function(error, status) {
+    // the sdk is now loaded
 });

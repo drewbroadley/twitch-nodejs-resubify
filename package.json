@@ -1,0 +1,16 @@
+{
+    "name": "twitchtv-resubify",
+    "description": "Ability to tell if the person is re-subbing or not",
+    "main": "public/main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/drewbroadley/twitch-nodejs-resubify"
+    },
+    "author": "Drew Broadley <drew.broadley@gmail.com>",
+    "dependencies": {
+
+    }
+}
